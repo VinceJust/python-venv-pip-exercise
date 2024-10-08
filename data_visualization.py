@@ -1,19 +1,19 @@
 import matplotlib.pyplot as plt
 
-# Beispiel-Daten: Zahlen von 0 bis 9
+# Zahlen von 0 bis 9
 x = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
 
-# Berechnung der Quadratzahlen und Kubikzahlen
+# Berechnung der Zahlen
 quadratzahlen = [i**2 for i in x]
 kubikzahlen = [i**3 for i in x]
 
-# Liniendiagramm für Quadratzahlen erstellen
+# LDiagramm für Quadratzahlen
 plt.plot(x, quadratzahlen, label='Quadratzahlen', color='blue', marker='o')
 
-# Liniendiagramm für Kubikzahlen erstellen
+# Diagramm für Kubikzahlen
 plt.plot(x, kubikzahlen, label='Kubikzahlen', color='red', marker='x')
 
-# Titel und Achsenbeschriftungen hinzufügen
+# Diagramm einrichten hinzufügen
 plt.title('Quadratzahlen und Kubikzahlen von 0 bis 9')
 plt.xlabel('Zahl')
 plt.ylabel('Wert')
@@ -21,8 +21,8 @@ plt.ylabel('Wert')
 # Legende anzeigen
 plt.legend()
 
-# Diagramm speichern
+# speichern als Bild
 plt.savefig('quadratzahlen_kubikzahlen.png')
 
-# Optional: Diagramm anzeigen
+# Diagramm anzeigen
 # plt.show()
